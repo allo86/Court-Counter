@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="team_score_view_team_name">
+        <item name="android:textSize">@dimen/team_score_view_team_name</item>
+    </style>
+
+    <style name="team_score_view_score">
+        <item name="android:textSize">@dimen/team_score_view_score</item>
+    </style>
+
+    <style name="team_summary_view_team_name">
+        <item name="android:textSize">@dimen/team_summary_view_team_name</item>
+    </style>
+
+    <style name="team_summary_view_score">
+        <item name="android:textSize">@dimen/team_summary_view_score</item>
+    </style>
+
+    <style name="previous_game_team_name">
+        <item name="android:textSize">@dimen/previous_game_team_name</item>
+    </style>
+
+    <style name="previous_game_team_score">
+        <item name="android:textSize">@dimen/previous_game_team_score</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:padding">@dimen/previous_game_team_padding</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="no_previous_games">
+        <item name="android:textSize">@dimen/previous_game_empty</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

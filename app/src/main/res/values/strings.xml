@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+
+    <string name="loading">Loading …</string>
+
+    <string name="bt_add_3_points">+3 Points</string>
+    <string name="bt_add_2_points">+2 Points</string>
+    <string name="bt_add_1_points">+1 Point</string>
+    <string name="bt_subtract_1_points">-1 Point</string>
+
+    <string name="bt_reset">Reset game</string>
+    <string name="bt_end">End game</string>
+
+    <string name="hint_local_team">Local team</string>
+    <string name="hint_away_team">Away team</string>
+    <string name="bt_create_game">Start game</string>
+
+    <string name="ic_previous_games">Previous games</string>
+    <string name="no_previous_games">No games yet … Start one!</string>
+
+    <string name="generic_error_message">An error has occurred. Please try again.</string>
+
+    <string name="bt_new_game">Start new game</string>
+</resources>

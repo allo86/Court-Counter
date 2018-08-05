@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/previous_games"
+        android:icon="@drawable/ic_list"
+        android:title="@string/ic_previous_games"
+        app:showAsAction="always"/>
+
+</menu>

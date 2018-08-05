@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="team_score_vertical_margin">10dp</dimen>
+    <dimen name="team_score_horizontal_margin">10dp</dimen>
+    <dimen name="team_score_view_team_name">16sp</dimen>
+    <dimen name="team_score_view_score">32sp</dimen>
+
+    <dimen name="team_summary_view_team_name">16sp</dimen>
+    <dimen name="team_summary_view_score">32sp</dimen>
+
+    <dimen name="previous_game_vertical_margin">8dp</dimen>
+    <dimen name="previous_game_vertical_margin_half">4dp</dimen>
+    <dimen name="previous_game_team_name">16sp</dimen>
+    <dimen name="previous_game_team_score">24sp</dimen>
+    <dimen name="previous_game_team_padding">10dp</dimen>
+    <dimen name="previous_game_empty">32sp</dimen>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.scenes.create.CreateGameActivity">
+
+    <EditText
+        android:id="@+id/et_local_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_local_team"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_away_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_away_team"
+        android:inputType="text"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_create_game"/>
+
+</LinearLayout>

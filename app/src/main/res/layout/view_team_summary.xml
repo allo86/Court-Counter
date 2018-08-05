@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/team_score_vertical_margin"
+              android:paddingLeft="@dimen/team_score_horizontal_margin"
+              android:paddingRight="@dimen/team_score_horizontal_margin"
+              android:paddingTop="@dimen/team_score_vertical_margin">
+
+    <TextView
+        android:id="@+id/tv_team_name"
+        style="@style/team_summary_view_team_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Team A"/>
+
+    <TextView
+        android:id="@+id/tv_team_score"
+        style="@style/team_summary_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="30"/>
+
+</LinearLayout>

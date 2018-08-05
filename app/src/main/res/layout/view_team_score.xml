@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_team_name"
+        style="@style/team_score_view_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/team_score_vertical_margin"
+        tools:text="Team A"/>
+
+    <TextView
+        android:id="@+id/tv_team_points"
+        style="@style/team_score_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/team_score_vertical_margin"
+        android:layout_marginTop="@dimen/team_score_vertical_margin"
+        tools:text="3"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_add_3_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_add_3_points"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_add_2_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_add_2_points"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_add_1_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_add_1_points"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_substract_1_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_subtract_1_points"/>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+
+        applicationId globalConfiguration.getAt("androidApplicationId")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+        testApplicationId globalConfiguration.getAt("testApplicationId")
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../buildsystem/debug.keystore')
+            storePassword 'android'
+            keyAlias 'keystore'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    def dependencies = rootProject.ext.presentationDependencies
+    def testDependencies = rootProject.ext.presentationTestDependencies
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    annotationProcessor dependencies.daggerCompiler
+    implementation dependencies.dagger
+
+    annotationProcessor dependencies.butterKnifeCompiler
+    implementation dependencies.butterKnife
+
+    implementation dependencies.appCompatV7
+    implementation dependencies.constraintLayout
+    implementation dependencies.recyclerView
+    implementation dependencies.architectureComponents
+
+    implementation dependencies.rxJava
+    implementation dependencies.rxAndroid
+    implementation dependencies.javaxAnnotation
+    implementation dependencies.javaxInject
+
+    annotationProcessor dependencies.dbFlowProcessor
+    implementation dependencies.dbFlowCore
+    implementation dependencies.dbFlow
+    implementation dependencies.dbFlowRxJava
+
+    testImplementation testDependencies.junit
+    androidTestImplementation testDependencies.testRunner
+    androidTestImplementation testDependencies.espresso
+}
